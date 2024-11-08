@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 
 import LoginPage from './pages/auth/LoginPage';
+import KakaoLoginPage from './pages/auth/KakaoLoginPage';
 import HomePage from './pages/HomePage';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="home" element={<HomePage />} />
+        <Route path="kakao/callback" element={<KakaoLoginPage />} />
       </Routes>
     </Router>
   );
